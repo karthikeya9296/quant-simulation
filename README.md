@@ -53,7 +53,7 @@ This forms the base for more complex models like Monte Carlo simulations for por
 
 ## Example Output
 
-![Sample GBM Output](https://github.com/k-dickinson/geometric-brownian-motion/blob/main/GBM_Simulation.png)
+![Sample GBM Output](https://github.com/karthikeya9296/quant-simulation/blob/main/GBM_Simulation.png)
 ---
 
 ## How It Works (Python)
@@ -79,7 +79,7 @@ for t in range(1, N):
     S[t] = S[t-1] * np.exp((mu - 0.5 * sigma**2)*dt + sigma*np.sqrt(dt)*Z[t])
 ```
 
-You can check out the full simulation code [here](quant-simulations-and-risk/GBM_Code.py)
+You can check out the full simulation code [here](https://github.com/karthikeya9296/quant-simulation/blob/main/GBM_Code.py)
 
 ---
 
@@ -97,7 +97,7 @@ Earlier, We simulate a single stock path — but the framework supports scaling 
 
 ## Example Output
 
-![Sample Monte Carlo Simulation Output](quant-simulations-and-risk/monte_carlo_example_output.png)
+![Sample Monte Carlo Simulation Output](https://github.com/karthikeya9296/quant-simulation/blob/main/monte_carlo_example_output.png)
 ---
 
 ## How it works
@@ -130,7 +130,7 @@ for t in range(1, N+1):
     )
 ```
 
-You can check out the full simulation code [here](quant-simulations-and-risk/Monte_Carlo_GBM.py)
+You can check out the full simulation code [here](https://github.com/karthikeya9296/quant-simulation/blob/main/Monte_Carlo_GBM.py)
 
 ---
 
@@ -148,7 +148,7 @@ This lets us estimate downside risk with:
 
 Example side-by-side output:
 
-![Sample Monte Carlo Simulation Output](quant-simulations-and-risk/Monte_Carlo_Outputs_Sidebyside.png)
+![Sample Monte Carlo Simulation Output](https://github.com/karthikeya9296/quant-simulation/blob/main/Monte_Carlo_Outputs_Sidebyside.png)
 
 ---
 
@@ -209,7 +209,7 @@ At each timestep for each simulation, the asset prices evolve via GBM, and we co
 
 ## Example Output
 
-![Portfolio Simulation Output](quant-simulations-and-risk/Portfolio_MonteCarlo_Figure.png)
+![Portfolio Simulation Output](https://github.com/karthikeya9296/quant-simulation/blob/main/Portfolio_MonteCarlo_Figure.png)
 
 ---
 
@@ -246,7 +246,7 @@ This model demonstrates:
 
 These are highly relevant to quant research, trading, and strategist roles — especially at firms like SIG, IMC, Citadel, or smaller prop shops.
 
-You can check out the full simulation code [here](quant-simulations-and-risk/portfolio_montecarlo_gbm.py)
+You can check out the full simulation code [here](https://github.com/karthikeya9296/quant-simulation/blob/main/portfolio_montecarlo_gbm.py)
 
 ---
 
