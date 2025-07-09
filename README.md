@@ -2,7 +2,7 @@
 
 ---
 
-Hi, I’m Kyle — an incoming math student at Carnegie Mellon University, documenting my journey into quantitative finance. This project explores how mathematical models can simulate stock price behavior, assess portfolio performance, and measure financial risk. It begins with Geometric Brownian Motion (GBM) to model individual stock paths, expands into Monte Carlo simulations across thousands of scenarios, and culminates in a portfolio-level risk analysis using correlation structures, and metrics like Value at Risk (VaR) and probability of loss. Along the way, it demonstrates techniques used in real-world quantitative research and trading.
+Hi, I’m Karthikeya — an AI researcher and quant enthusiast documenting my exploration of quantitative finance. In this project, I dive into how mathematical models can be used to simulate stock price behavior, evaluate portfolio performance, and quantify financial risk. I start with Geometric Brownian Motion (GBM) to model individual asset paths, scale up using Monte Carlo simulations to generate thousands of market scenarios, and extend the analysis to portfolios by incorporating asset correlations and computing key metrics like Value at Risk (VaR) and probability of loss. The goal is to replicate real-world techniques used by quantitative researchers and traders to build robust, data-driven strategies.
 
 ---
 
@@ -79,7 +79,7 @@ for t in range(1, N):
     S[t] = S[t-1] * np.exp((mu - 0.5 * sigma**2)*dt + sigma*np.sqrt(dt)*Z[t])
 ```
 
-You can check out the full simulation code [here](https://github.com/k-dickinson/geometric-brownian-motion/blob/main/GBM_Code.py)
+You can check out the full simulation code [here](quant-simulations-and-risk/GBM_Code.py)
 
 ---
 
@@ -97,7 +97,7 @@ Earlier, We simulate a single stock path — but the framework supports scaling 
 
 ## Example Output
 
-![Sample Monte Carlo Simulation Output](https://github.com/k-dickinson/quant-simulations-and-risk/blob/main/monte_carlo_example_output.png)
+![Sample Monte Carlo Simulation Output](quant-simulations-and-risk/monte_carlo_example_output.png)
 ---
 
 ## How it works
@@ -130,7 +130,7 @@ for t in range(1, N+1):
     )
 ```
 
-You can check out the full simulation code [here](https://github.com/k-dickinson/quant-simulations-and-risk/blob/main/Monte_Carlo_GBM.py)
+You can check out the full simulation code [here](quant-simulations-and-risk/Monte_Carlo_GBM.py)
 
 ---
 
@@ -148,7 +148,7 @@ This lets us estimate downside risk with:
 
 Example side-by-side output:
 
-![Sample Monte Carlo Simulation Output](https://github.com/k-dickinson/quant-simulations-and-risk/blob/main/Monte_Carlo_Outputs_Sidebyside.png)
+![Sample Monte Carlo Simulation Output](quant-simulations-and-risk/Monte_Carlo_Outputs_Sidebyside.png)
 
 ---
 
@@ -209,7 +209,7 @@ At each timestep for each simulation, the asset prices evolve via GBM, and we co
 
 ## Example Output
 
-![Portfolio Simulation Output](https://github.com/k-dickinson/quant-simulations-and-risk/blob/main/Portfolio_MonteCarlo_Figure.png)
+![Portfolio Simulation Output](quant-simulations-and-risk/Portfolio_MonteCarlo_Figure.png)
 
 ---
 
@@ -246,22 +246,10 @@ This model demonstrates:
 
 These are highly relevant to quant research, trading, and strategist roles — especially at firms like SIG, IMC, Citadel, or smaller prop shops.
 
-You can check out the full simulation code [here](https://github.com/k-dickinson/quant-simulations-and-risk/blob/main/portfolio_montecarlo_gbm.py)
+You can check out the full simulation code [here](quant-simulations-and-risk/portfolio_montecarlo_gbm.py)
 
 ---
 
-## Related Videos
-
-Check out my Instagram breakdown where I explain this parts of this model through analogies:
-[Instagram Link](https://instagram.com/quant_kyle)
-
----
-
-## Questions?
-
-If you have any questions, feel free to drop them in the [Instagram](https://instagram.com/quant_kyle) comments or open an issue!
-
----
 
 ## Resources I Used
 
